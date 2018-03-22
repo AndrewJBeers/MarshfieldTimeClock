@@ -5,14 +5,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        .auto-style1 {
+            height: 23px;
+        }
+    </style>
 </head>
-<body style="background-color: #E0E0E0">
+<body>
     <form id="form1" runat="server">
-    <div id="header" style="background-color: #1f3576; height: 300px; text-align: center;">
+    <div id="header">
         <br />
-        <img title="School Logo" alt="School Logo" src="bluejay.png" style="text-align: center; height: 164px; width: 183px;">
-        <h1 style="font-size: 65px; font-family: monospace; font-weight: bold; color: #E0E0E0; text-decoration: none; text-align: center;">Marshfield R-I Schools
-        </h1>
+        <img title="SchoolLogo" alt="School Logo" src="bluejay.png">
+        <h1 id="SchoolName">Marshfield R-I Schools</h1>
         <br />
     </div>
     <div id="InteractivePage" style="height: 600px; background-color: #E0E0E0;">
@@ -31,6 +37,44 @@
            <br />
        </div>
        <div id="HoursWorkedTable">
+
+           <table id="HoursWorked" style="width:64%; margin-left: 135px;">
+               <tr>
+                   <td>Sunday</td>
+                   <td>&nbsp;</td>
+                   <td>&nbsp;</td>
+               </tr>
+               <tr>
+                   <td class="auto-style1">Monday</td>
+                   <td class="auto-style1"></td>
+                   <td class="auto-style1"></td>
+               </tr>
+               <tr>
+                   <td>Tuesday</td>
+                   <td>&nbsp;</td>
+                   <td>&nbsp;</td>
+               </tr>
+               <tr>
+                   <td>Wednesday</td>
+                   <td>&nbsp;</td>
+                   <td>&nbsp;</td>
+               </tr>
+               <tr>
+                   <td>Thursday</td>
+                   <td>&nbsp;</td>
+                   <td>&nbsp;</td>
+               </tr>
+               <tr>
+                   <td>Friday</td>
+                   <td>&nbsp;</td>
+                   <td>&nbsp;</td>
+               </tr>
+               <tr>
+                   <td>Saturday</td>
+                   <td>&nbsp;</td>
+                   <td>&nbsp;</td>
+               </tr>
+           </table>
 
        </div>
     </div>

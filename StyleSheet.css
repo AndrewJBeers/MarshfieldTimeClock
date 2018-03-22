@@ -1,2 +1,152 @@
-﻿body {
+﻿
+<!-- Styles form for every page -->
+body {
+    background-color: #E0E0E0;
+}
+#header{
+    background-color: #1f3576; 
+    height: 300px; 
+    text-align: center;
+}
+#SchoolLogo{
+    text-align: center; 
+    height: 164px; 
+    width: 183px;
+}
+#SchoolName{
+    font-size: 65px; 
+    font-family: monospace; 
+    font-weight: bold; 
+    color: #E0E0E0; 
+    text-decoration: none; 
+    text-align: center;
+}
+#InteractivePage{
+    height: 600px; 
+    background-color: #E0E0E0;
+}
+#menu{
+    border-left: 8px none #50504E; 
+    border-right: 8px none #50504E; 
+    border-top: 8px none #50504E;
+    border-bottom: 8px double #50504E; 
+    height: 30px; 
+    text-align: center; 
+    margin-left: 1px; 
+    font-family: monospace; 
+    background-color: #3f69e2;
+}
+
+<!-- Sign in Page -->
+#WholeSignInPage{
+    text-align: center;
+}
+#SignInSchoolLogo{
+    text-align: center; 
+    height: 150px; 
+    width: 150px;
+}
+#SignInLabel{
+    border-width: 8px; 
+    border-color: #2D2D2C; 
+    font-family: monospace; 
+    font-size: large; 
+    border-left-style: none; 
+    border-bottom-style: double;
+}
+
+
+<!-- time Clock Page -->
+#timeClock{
+    
+}
+#btnTimeClock{
+    background-color: #3F69E2; 
+    font-family: monospace;
+    font-weight: bold; 
+    color:#E0E0E0; 
+    Font-Size: 23px; 
+    Width: 215px; 
+    border: none;
+    Height: 30px; 
+}
+#btnHoursWorked{
+    background-color: #3F69E2; 
+    font-family: monospace;
+    font-weight: bold; 
+    color:#E0E0E0; 
+    Font-Size: 23px; 
+    Width: 215px; 
+    border: none;
+    Height: 30px; 
+}
+#timeClockHeader{
+    text-align: center;
+    font-family: monospace; 
+    font-size: 45px; 
+    font-weight: bold; 
+    color: #50504E; 
+    font-variant: normal; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    font-style: italic;
+}
+#Time{
+    text-align: center; 
+    font-size: medium;
+}
+#txtBxDisplayTime{
+    text-align: center; 
+    Font-Size: 30px;     
+    Border: None; 
+    Width: 200px; 
+    background-color: #E0E0E0; 
+    font-family: monospace;
+}
+#txtBxDisplayDay{
+    text-align: center; 
+    Font-Size: 30px;
+    Border: None; 
+    Width: 500px; 
+    background-color: #E0E0E0; 
+    Font-family:monospace;
+}
+#dropDown{
+    Font-family: monospace; 
+    Font-Size: X-Large;
+}
+#ClockInOut{
+    text-align: center;
+}
+#btnClockIn{
+    background-color:#50504E; 
+    font-weight: bold; 
+    Font-family: "monospace";
+    Font-Size: 22px;
+    Width: 150px;
+    Border: None;
+    color:#E0E0E0; 
+    Height: 30px; 
+    Border-Color: #E0E0E0;
+}
+#btnClockOut{
+    background-color:#50504E; 
+    font-weight: bold; 
+    Font-family: "monospace";
+    Font-Size: 22px;
+    Width: 150px;
+    Border: None;
+    color:#E0E0E0; 
+    Height: 30px; 
+    Border-Color: #E0E0E0;
+}
+
+<!-- Hours Worked Page -->
+#HoursWorkedTable{
+    text-align: center; 
+    width: 974px; 
+    height: 167px; 
+    bottom: 0px; 
+    float: inherit; 
+    margin-left: 205px;
 }
