@@ -49,20 +49,25 @@
             <asp:TextBox ID="txtBxDisplayDay" runat="server" ></asp:TextBox>
 
         </div>
-        <div id="dropDown" style="text-align: center">
+        <div id="dropDown">
             <br />
             <br />
-            <asp:DropDownList ID="drpDwnWorkId" runat="server" OnSelectedIndexChanged="drpDwnWorkId_SelectedIndexChanged" OnTextChanged="drpDwnWorkId_SelectedIndexChanged" >
+            <asp:DropDownList ID="drpDwnWorkId" runat="server" OnSelectedIndexChanged="drpDwnWorkId_SelectedIndexChanged" OnTextChanged="drpDwnWorkId_SelectedIndexChanged" Height="16px" Width="124px" >
                 <asp:ListItem>Choose Code</asp:ListItem>
                 <asp:ListItem>Bus Driver</asp:ListItem>
                 <asp:ListItem>Janitor</asp:ListItem>
                 <asp:ListItem>Cook</asp:ListItem>
             </asp:DropDownList>
 
-        &nbsp;<br />
+            <br />
+            <br />
+            <asp:Button ID="btnChangeRole" runat="server" Text="Change Role" />
+            <br />
             <br />
         </div>
         <div id="ClockInOut">
+
+            <br />
 
             <br />
 

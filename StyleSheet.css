@@ -1,6 +1,9 @@
 ﻿
 <!-- Styles form for every page -->
-body {
+#html{
+    background-color: #E0E0E0;
+}
+#body {
     background-color: #E0E0E0;
 }
 #header{
@@ -36,6 +39,7 @@ body {
     font-family: monospace; 
     background-color: #3f69e2;
 }
+<!-- End of Every Page Styles -->
 
 <!-- Sign in Page -->
 #WholeSignInPage{
@@ -54,7 +58,7 @@ body {
     border-left-style: none; 
     border-bottom-style: double;
 }
-
+<!-- end of Sign in Page-->
 
 <!-- time Clock Page -->
 #timeClock{
@@ -112,11 +116,20 @@ body {
     Font-family:monospace;
 }
 #dropDown{
+    text-align: Center;
     Font-family: monospace; 
     Font-Size: X-Large;
 }
 #ClockInOut{
     text-align: center;
+}
+#btnChangeRole{
+    background-color: #B9C8F4;
+    border: none;
+    font-family: monospace;
+    color: #50504E;
+    height: 23px;
+    width: 103px;
 }
 #btnClockIn{
     background-color:#50504E; 
@@ -140,13 +153,92 @@ body {
     Height: 30px; 
     Border-Color: #E0E0E0;
 }
+<!-- end of Time Clock Page-->
 
 <!-- Hours Worked Page -->
-#HoursWorkedTable{
+#HoursWorked{
     text-align: center; 
-    width: 974px; 
-    height: 167px; 
-    bottom: 0px; 
-    float: inherit; 
-    margin-left: 205px;
 }
+#HoursWorkedTable{
+    margin: auto;
+    width: 53%;
+}
+.auto-style1 {
+    height: 23px;
+    width: 69px;
+    border: thin solid #666666;
+}
+.auto-style2 {
+    width: 42px;
+    border: thin solid #666666;
+}
+.auto-style3 {
+    height: 23px;
+    width: 42px;
+    border: thin solid #666666;
+}
+.auto-style4 {
+    width: 65px;
+    border: thin solid #666666;
+}
+.auto-style5 {
+    height: 23px;
+    width: 65px;
+    border: thin solid #666666;
+}
+.auto-style6 {
+    width: 69px;
+    border: thin solid #666666;
+}
+.TotalCol1{
+    border: thin solid #666666; 
+    background-color: #D5DEF9; 
+}
+.TotalCol2{
+    border: thin solid #666666; 
+    background-color: #D5DEF9; 
+}
+.TotalCol3{
+    border: thin solid #666666; 
+    background-color: #D5DEF9; 
+}
+.TotalCol4{
+    border: thin solid #666666; 
+    background-color: #D5DEF9; 
+}
+.TotalCol5{
+    border: thin solid #666666; 
+    background-color: #D5DEF9; 
+}
+#HoursWorkedHeader{
+    text-align: center;
+    font-family: monospace; 
+    font-size: 45px; 
+    font-weight: bold; 
+    color: #50504E; 
+    font-variant: normal; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    font-style: italic;
+}
+#HoursWorkedButtons{
+    text-align: center;
+}
+
+#btnBack{
+    background-color: #1F3576;
+    font-weight: bold;
+    font-family: monospace;
+    color: #E0E0E0;
+    height: 31px;
+    width: 170px;
+}
+#btnPrevious{
+    background-color: #1F3576;
+    font-weight: bold;
+    font-family: monospace;
+    color: #E0E0E0;
+    height: 31px;
+    width: 170px;
+}
+<!-- End of Hours Worked Page-->

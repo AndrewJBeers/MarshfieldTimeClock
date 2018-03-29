@@ -2,16 +2,11 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #E0E0E0;">
 <head runat="server">
     <title></title>
     <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
 
-    <style type="text/css">
-        .auto-style1 {
-            height: 23px;
-        }
-    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -21,62 +16,106 @@
         <h1 id="SchoolName">Marshfield R-I Schools</h1>
         <br />
     </div>
-    <div id="InteractivePage" style="height: 600px; background-color: #E0E0E0;">
-       <div id="timeClock" style="text-align: center">
-        <div id="menu" style="border-left: 8px none #50504E; border-right: 8px none #50504E; border-top: 8px none #50504E; border-bottom: 8px double #50504E; height: 30px; text-align: center; margin-left: 1px; font-family: monospace; background-color: #3f69e2;">
+    <div id="InteractivePage">
+       <div id="HoursWorked">
+        <div id="menu">
 
-           <asp:Button ID="btnTimeClock" runat="server" BackColor="#3F69E2" Font-Bold="True" Font-Names="monospace" ForeColor="#E0E0E0" Text="Time Clock" Font-Size="23px" Width="215px" BorderStyle="None" Height="30px" />
+           <asp:Button ID="btnTimeClock" runat="server" Text="Time Clock" />
            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <asp:Button ID="btnHoursWorked" runat="server" BackColor="#3F69E2" Font-Bold="True" Font-Names="monospace" ForeColor="#E0E0E0" Text="Hours Worked" style="margin-left: 0px" Font-Size="23px" Width="215px" BorderStyle="None" BorderColor="#3F69E2" Height="30px" />
+           <asp:Button ID="btnHoursWorked" runat="server" Text="Hours Worked" />
         
             <br />
         
         </div>
            <br />
-           <h2 style="font-family: monospace; font-size: 45px; font-weight: bold; color: #50504E; font-variant: normal; text-transform: uppercase; text-decoration: none; font-style: italic;"> Hours Worked </h2>
+           <h2 id="HoursWorkedHeader"> Hours Worked </h2>
            <br />
        </div>
-       <div id="HoursWorkedTable">
+       <div id="Worked">
 
-           <table id="HoursWorked" style="width:64%; margin-left: 135px;">
-               <tr>
-                   <td>Sunday</td>
-                   <td>&nbsp;</td>
-                   <td>&nbsp;</td>
+           <br />
+
+           <table id="HoursWorkedTable">
+               <tr id="HeaderRow">
+                   <td class="auto-style2">&nbsp;</td>
+                   <td class="auto-style4">Week Number</td>
+                   <td class="auto-style6">Week Number</td>
+                   <td class="auto-style6">Week Number</td>
+                   <td class="auto-style6">Week Number</td>
                </tr>
-               <tr>
-                   <td class="auto-style1">Monday</td>
+               <tr id="SundayRow">
+                   <td class="auto-style2">Sunday</td>
+                   <td class="auto-style4">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
+               </tr>
+               <tr id="MondayRow">
+                   <td class="auto-style3">Monday</td>
+                   <td class="auto-style5"></td>
                    <td class="auto-style1"></td>
-                   <td class="auto-style1"></td>
+                   <td class="auto-style1">&nbsp;</td>
+                   <td class="auto-style1">&nbsp;</td>
                </tr>
-               <tr>
-                   <td>Tuesday</td>
-                   <td>&nbsp;</td>
-                   <td>&nbsp;</td>
+               <tr id="TuesdayRow">
+                   <td class="auto-style2">Tuesday</td>
+                   <td class="auto-style4">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
                </tr>
-               <tr>
-                   <td>Wednesday</td>
-                   <td>&nbsp;</td>
-                   <td>&nbsp;</td>
+               <tr id="WednesdayRow">
+                   <td class="auto-style2">Wednesday</td>
+                   <td class="auto-style4">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
                </tr>
-               <tr>
-                   <td>Thursday</td>
-                   <td>&nbsp;</td>
-                   <td>&nbsp;</td>
+               <tr id="ThursdayRow">
+                   <td class="auto-style2">Thursday</td>
+                   <td class="auto-style4">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
+                   <td class="auto-style6"">&nbsp;</td>
                </tr>
-               <tr>
-                   <td>Friday</td>
-                   <td>&nbsp;</td>
-                   <td>&nbsp;</td>
+               <tr id="FridayRow">
+                   <td class="auto-style2">Friday</td>
+                   <td class="auto-style4">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
                </tr>
-               <tr>
-                   <td>Saturday</td>
-                   <td>&nbsp;</td>
-                   <td>&nbsp;</td>
+               <tr id="SaturdayRow">
+                   <td class="auto-style2">Saturday</td>
+                   <td class="auto-style4">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
+                   <td class="auto-style6">&nbsp;</td>
+               </tr>
+               <tr id="TotalRow">
+                   <td class="TotalCol1">Total Hours</td>
+                   <td class="TotalCol2">&nbsp;</td>
+                   <td class="TotalCol3">&nbsp;</td>
+                   <td class="TotalCol4">&nbsp;</td>
+                   <td class="TotalCol5">&nbsp;</td>
                </tr>
            </table>
 
+           <br />
+
        </div>
+        <div id="HoursWorkedButtons" style="text-align: center">
+
+            <br />
+
+            <br style="font-family: monospace" />
+            <asp:Button ID="btnBack" runat="server" Text="Back" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnPrevious" runat="server" Text="Previous Pay Period" />
+
+            <br />
+
+        </div>
     </div>
     </form>
 </body>
