@@ -4,33 +4,32 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #E0E0E0;">
 <head runat="server">
-    <title></title>
-    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <title> Marshfield Hours Worked </title>
+
+    <link rel="stylesheet" href="StyleSheet.css" />
 
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="header">
+    <div class="page-header">
         <br />
         <img title="SchoolLogo" alt="School Logo" src="bluejay.png">
         <h1 id="SchoolName">Marshfield R-I Schools</h1>
         <br />
     </div>
     <div id="InteractivePage">
-       <div id="HoursWorked">
-        <div id="menu">
-
-           <asp:Button ID="btnTimeClock" runat="server" Text="Time Clock" />
-           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <asp:Button ID="btnHoursWorked" runat="server" Text="Hours Worked" />
-        
-            <br />
-        
-        </div>
+        <ul>
+            <li><a href="#">Time Clock</a></li>
+            <li><a href="#">Hours Worked</a></li>
+        </ul>
            <br />
            <h2 id="HoursWorkedHeader"> Hours Worked </h2>
            <br />
-       </div>
        <div id="Worked">
 
            <br />
@@ -118,5 +117,9 @@
         </div>
     </div>
     </form>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

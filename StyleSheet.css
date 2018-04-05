@@ -6,7 +6,7 @@
 #body {
     background-color: #E0E0E0;
 }
-#header{
+.page-header{
     background-color: #1f3576; 
     height: 300px; 
     text-align: center;
@@ -25,10 +25,12 @@
     text-align: center;
 }
 #InteractivePage{
+    
     height: 600px; 
     background-color: #E0E0E0;
 }
 #menu{
+    position: absolute;
     border-left: 8px none #50504E; 
     border-right: 8px none #50504E; 
     border-top: 8px none #50504E;
@@ -242,3 +244,27 @@
     width: 170px;
 }
 <!-- End of Hours Worked Page-->
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkslategray;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #EBF8FF;
+}
