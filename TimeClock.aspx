@@ -23,24 +23,22 @@
 <body style="background-color: #E0E0E0">
     <form id="form1" runat="server">
 
-    <div class="page-header">
+    <div class="jumbotron">
         <br />
         <img title="SchoolLogo" alt="School Logo" src="bluejay.png">
-        <h1 id="SchoolName">Marshfield R-I Schools
-        </h1>
+        <h1 id="SchoolName">Marshfield R-I Schools</h1>
         <br />
     </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid" id="navigation">
+            <ul class="nav navbar-nav">
+                <li class="active" id="btn-time"><a href="#">Time Clock</a></li>
+                <li class="active" id="btn-hours"><a href="#">Hours Worked</a></li>
+            </ul>
+        </div>
+    </nav>
     <div id="InteractivePage">
        <div id="timeClock">
-        <div id="menu">
-
-           <asp:Button id="btnTimeClock" runat="server" Text="Time Clock" />
-           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <asp:Button id="btnHoursWorked" runat="server" Text="Hours Worked" />
-        
-            <br />
-        
-        </div>
            <br />
            <h2 id="timeClockHeader"> Time Clock </h2>
            <br />
