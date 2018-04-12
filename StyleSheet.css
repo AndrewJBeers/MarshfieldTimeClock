@@ -6,17 +6,12 @@
 #body {
     background-color: #E0E0E0;
 }
-.page-header{
-    background-color: #1f3576; 
-    height: 300px; 
+.jumbotron {
+    background-color: #1f3576;
     text-align: center;
 }
-#SchoolLogo{
-    text-align: center; 
-    height: 164px; 
-    width: 183px;
-}
 #SchoolName{
+    margin: 0px;
     font-size: 65px; 
     font-family: monospace; 
     font-weight: bold; 
@@ -24,20 +19,48 @@
     text-decoration: none; 
     text-align: center;
 }
+.container-fluid{
+    padding-bottom: 20px;
+}
+.nav.navbar-nav{
+    margin:0;
+    padding: 0;
+    display: inline-block;
+    float: none;
+    width: 459px;
+}
+li{
+    list-style-type: none;
+}
+li a:hover {
+    background-color: #1f3576;
+}
+li a {
+    display: block;
+    font-family: Cooper Std;
+    font-size: 18px;
+    color: #ecf2f9;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 15px;
+    width: 165px;
+}
+#btn-time{
+    margin-right: 10px;
+    font-family: monospace;
+}
+#btn-hours{
+    margin-left: 10px;
+    height: 49px;
+    width: 184px;
+}
 #InteractivePage{
-    
-    height: 600px; 
     background-color: #E0E0E0;
 }
-#menu{
-    position: absolute;
-    border-left: 8px none #50504E; 
-    border-right: 8px none #50504E; 
-    border-top: 8px none #50504E;
+#navigation{
     border-bottom: 8px double #50504E; 
     height: 30px; 
-    text-align: center; 
-    margin-left: 1px; 
+    text-align: center;  
     font-family: monospace; 
     background-color: #3f69e2;
 }
@@ -226,7 +249,6 @@
 #HoursWorkedButtons{
     text-align: center;
 }
-
 #btnBack{
     background-color: #1F3576;
     font-weight: bold;
@@ -256,15 +278,5 @@ li {
     float: left;
 }
 
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #EBF8FF;
-}
+

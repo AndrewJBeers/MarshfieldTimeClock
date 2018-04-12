@@ -16,17 +16,22 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div class="page-header">
+    <div class="jumbotron">
         <br />
         <img title="SchoolLogo" alt="School Logo" src="bluejay.png">
         <h1 id="SchoolName">Marshfield R-I Schools</h1>
         <br />
     </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid" id="navigation">
+            <ul class="nav navbar-nav">
+                <li class="active" id="btn-time"><a href="#">Time Clock</a></li>
+                <li class="active" id="btn-hours"><a href="#">Hours Worked</a></li>
+            </ul>
+        </div>
+    </nav>
     <div id="InteractivePage">
-        <ul>
-            <li><a href="#">Time Clock</a></li>
-            <li><a href="#">Hours Worked</a></li>
-        </ul>
+        
            <br />
            <h2 id="HoursWorkedHeader"> Hours Worked </h2>
            <br />
